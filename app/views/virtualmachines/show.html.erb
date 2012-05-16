@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @virtualmachine.name %>
+</p>
+
+<p>
+  <b>Os:</b>
+  <%= @virtualmachine.os %>
+</p>
+
+<p>
+  <b>Ip:</b>
+  <%= @virtualmachine.ip %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @virtualmachine.description %>
+</p>
+
+<p>
+  <b>Memory:</b>
+  <%= @virtualmachine.memory %>
+</p>
+
+<p>
+  <b>Cpu:</b>
+  <%= @virtualmachine.cpu %>
+</p>
+
+<p>
+  <b>Hdd:</b>
+  <%= @virtualmachine.hdd %>
+</p>
+
+<p>
+  <b>Hostname:</b>
+  <%= @virtualmachine.hostname %>
+</p>
+
+
+<%= link_to 'Edit', edit_virtualmachine_path(@virtualmachine) %> |
+<%= link_to 'Back', virtualmachines_path %>
