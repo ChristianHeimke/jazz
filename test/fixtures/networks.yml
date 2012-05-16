@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ip: MyString
+  maske: MyString
+  broadcast: MyString
+  gateway: MyString
+  used: false
+
+two:
+  ip: MyString
+  maske: MyString
+  broadcast: MyString
+  gateway: MyString
+  used: false

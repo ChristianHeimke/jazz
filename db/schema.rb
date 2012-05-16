@@ -10,7 +10,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120516192332) do
+ActiveRecord::Schema.define(:version => 20120516194816) do
+
+  create_table "networks", :force => true do |t|
+    t.string   "ip"
+    t.string   "maske"
+    t.string   "broadcast"
+    t.string   "gateway"
+    t.boolean  "used"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "virtualmachines", :force => true do |t|
     t.string   "name"

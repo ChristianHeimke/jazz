@@ -1,4 +1,6 @@
 Jazz::Application.routes.draw do
+  resources :networks
+
   resources :virtualmachines
 
   get "home/index"

@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Ip:</b>
+  <%= @network.ip %>
+</p>
+
+<p>
+  <b>Maske:</b>
+  <%= @network.maske %>
+</p>
+
+<p>
+  <b>Broadcast:</b>
+  <%= @network.broadcast %>
+</p>
+
+<p>
+  <b>Gateway:</b>
+  <%= @network.gateway %>
+</p>
+
+<p>
+  <b>Used:</b>
+  <%= @network.used %>
+</p>
+
+
+<%= link_to 'Edit', edit_network_path(@network) %> |
+<%= link_to 'Back', networks_path %>
