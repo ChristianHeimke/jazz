@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbcc182b-9e31-45fc-a76c-82f11feea4ac" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/virtualmachines/index.html.erb" afterPath="$PROJECT_DIR$/app/views/virtualmachines/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/virtualmachines/new.html.erb" afterPath="$PROJECT_DIR$/app/views/virtualmachines/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-    </list>
+    <list default="true" id="bbcc182b-9e31-45fc-a76c-82f11feea4ac" name="Default" comment="" />
     <ignored path="jazz.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -67,7 +61,7 @@
       <file leaf-file-name="new.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/virtualmachines/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="161" selection-end="161" vertical-scroll-proportion="0.16949153">
+            <state line="9" column="193" selection-start="170" selection-end="170" vertical-scroll-proportion="0.19067797">
               <folding />
             </state>
           </provider>
@@ -352,6 +346,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager" selected="Rails.Development: jazz">
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
@@ -647,7 +642,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/virtualmachines/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="161" selection-end="161" vertical-scroll-proportion="0.16949153">
+        <state line="9" column="193" selection-start="170" selection-end="170" vertical-scroll-proportion="0.19067797">
           <folding />
         </state>
       </provider>
