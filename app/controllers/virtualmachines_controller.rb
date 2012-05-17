@@ -27,6 +27,37 @@ class VirtualmachinesController < ApplicationController
   # GET /virtualmachines/new.json
   def new
     @virtualmachine = Virtualmachine.new
+    @ips = Array.new
+
+    # get all networks
+    networks = Network.all
+    # get all ips from the network
+    networks.each do |network|
+      # calculate ip range
+      mask = 255 - network.maske.to_i - 1
+      base_ip = network.ip
+      segments = base_ip.split '.'
+      prefix = segments[0] + "." +segments[1] + "." + segments[2] + "."
+      start = segments[3].to_i
+
+      @ips.push(network.ip)
+
+      # create array with ips
+      for i in 0...mask do
+        _ip = prefix +  (start + i + 1).to_s
+
+        vm = Virtualmachine.where("ip = ?", _ip)
+
+        if(vm.count < 1)
+          @ips.push(" |- " + _ip)
+        end
+
+
+
+      end
+    end
+
+
 
     respond_to do |format|
       format.html # new.html.erb
@@ -42,7 +73,13 @@ class VirtualmachinesController < ApplicationController
   # POST /virtualmachines
   # POST /virtualmachines.json
   def create
-    @virtualmachine = Virtualmachine.new(params[:virtualmachine])
+    vm = params[:virtualmachine]
+
+    # strip the |- format string
+    vm["ip"] = vm["ip"].to_s[4...vm["ip"].size]
+
+    # create new vm
+    @virtualmachine = Virtualmachine.new(vm)
 
     respond_to do |format|
       if @virtualmachine.save

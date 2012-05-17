@@ -15,6 +15,20 @@ class NetworksController < ApplicationController
   def show
     @network = Network.find(params[:id])
 
+    # calculate ip range
+    mask = 255 - @network.maske.to_i - 1
+    base_ip = @network.ip
+    segments = base_ip.split '.'
+    prefix = segments[0] + "." +segments[1] + "." + segments[2] + "."
+    start = segments[3].to_i
+
+    @ips = Array.new
+    # create array with ips
+    for i in 0...mask do
+      @ips[i] = prefix +  (start + i + 1).to_s
+    end
+
+    # render output
     respond_to do |format|
       format.html # show.html.erb
       format.json { render :json => @network }

@@ -3,16 +3,17 @@
 
 <article class="module width_full">
 
-  <header><h3 class="tabs_involved">Overview</h3>
+  <header><h3 class="tabs_involved">virtual machines</h3>
 
   </header>
 
   <div class="tab_container">
     <div id="tab1" class="tab_content">
 
-      <table class="tablesorter" cellspacing="0">
+      <table class="tablesorter" cellspacing="0" border="0">
         <thead>
             <tr>
+              <th></th>
               <th>Name</th>
               <th>Os</th>
               <th>Ip</th>
@@ -28,6 +29,7 @@
         <tbody>
         <% @virtualmachines.each do |virtualmachine| %>
             <tr>
+              <td><span style="color:green">&bullet;</span></td>
               <td><%= virtualmachine.name %></td>
               <td><%= virtualmachine.os %></td>
               <td><%= virtualmachine.ip %></td>

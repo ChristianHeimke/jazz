@@ -21,7 +21,8 @@
   </div>
   <div class="field">
     <%= f.label :ip %><br />
-    <%= f.text_field :ip %>
+    <%=  select("virtualmachine","ip", @ips, {:include_blank => true}) %>
+
   </div>
   <div class="field">
     <%= f.label :description %><br />

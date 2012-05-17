@@ -14,24 +14,25 @@
   <div class="field">
     <%= f.label :ip %><br />
     <%= f.text_field :ip %>
+    e.g.   176.0.369.526
   </div>
   <div class="field">
-    <%= f.label :maske %><br />
-    <%= f.text_field :maske %>
+    Subnetmask:<br/>
+    255.255.255.<%= f.text_field :maske %>
+
   </div>
   <div class="field">
     <%= f.label :broadcast %><br />
     <%= f.text_field :broadcast %>
+    e.g. 176.9.169.363
   </div>
   <div class="field">
     <%= f.label :gateway %><br />
     <%= f.text_field :gateway %>
-  </div>
-  <div class="field">
-    <%= f.label :used %><br />
-    <%= f.check_box :used %>
+    e.g. 176.9.0.3
   </div>
   <div class="actions">
     <%= f.submit %>
+
   </div>
 <% end %>
